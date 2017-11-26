@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     if @article.update
       redirect_to @article
     else
-      
+
     end
   end
 
@@ -33,7 +33,7 @@ class ArticlesController < ApplicationController
   end
 
   def index
-
+    @articles = Article.all.order("created_at DESC")
   end
 
   private

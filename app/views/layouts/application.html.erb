@@ -9,8 +9,11 @@
   </head>
 
   <body>
-  	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+      <nav class="nav navbar navbar-default">
+        <a class="navbar-brand" ><h2><%= link_to "WIKI", root_path %></h2></a>
+      </nav>
+      <%= yield %>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
   </body>
 </html>
