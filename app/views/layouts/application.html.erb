@@ -8,13 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>    
+  <body>
+    <div class="navbar"> 
       <nav class="nav navbar navbar-default">
         <a class="navbar-brand" ><h2><%= link_to "WIKI", root_path %></h2></a>
       </nav>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>
-      <%= link_to "New Article", new_article_path %> 
+      
+    </div>
   </body>
 </html>

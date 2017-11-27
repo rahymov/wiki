@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :find_article, only: [:show]
-
+  before_action :authenticate_user!, except: [:index, :show]
   def new
     @article = current_user.articles.build 
   end
